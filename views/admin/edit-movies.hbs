@@ -1,0 +1,182 @@
+<title>Edit Movies</title>
+<div class="add-movies-section">
+          <div class="nav-bar-sticky ">
+        
+        <ul>
+          <span>Header</span>
+          <div class="nav-swiper">
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin">Admin Home</a></li>
+          <li><a href="/admin/show-admin-movies">Show All Movies Admin</a></li>
+          <li><a href="/admin/add-movies">Add Movies</a></li>
+          <li><a href="/admin/show-actor">Show All Actors</a></li>
+          <li><a href="/admin/add-actor">Add Actor</a></li>
+          <li><a href="/admin/add-nextweek-movies">Add Next Week</a></li>
+          <li><a href="/admin/add-nextweek-movies">Show Next Week Movies</a></li>
+         
+        </div>
+        </ul>
+      </div>
+    <div class="add-movies-form">
+        <div class="black-header">Edit Movies</div>
+        <div class="add-movies-form-section">
+            <form action="/admin/edit-movies/{{movie._id}}" class="movies-form" enctype="multipart/form-data" method="POST">
+                <div class="input-section">
+                    <label class="fm-details">
+                        Movie Name :</label>
+                            <input type="text" name="name" value="{{movie.name}}" required>
+                             <br>
+                            English Movie Name :</label> 
+                            <input type="text" name="engname" value="{{movie.engname}}" >
+
+                </div>
+                <div class="input-section"  >
+                    <label class="fm-details">
+                        Category :</label>
+                    <select name="category"  >
+                         <option value="{{movie.category}}">{{movie.category}}</option>
+                        <option value="malayalam">Malayalam</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="hollywood">Hollywood</option>
+                        <option value="other">Other</option>
+                        <option value="webseries">Web series</option>
+                    </select>
+                </div>
+               <div class="input-section">
+                    <label class="fm-details">
+                        Trending Add :</label>
+                    <select name="trending">
+                        <option value="{{movie.trending}}">{{movie.trending}}</option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        
+                    </select>
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Release Date : </label>
+                    <input type="text" name="releasedate" value="{{movie.releasedate}}" >
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        Release Year : </label>
+                    <input type="text" name="year" value="{{movie.year}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Dirctor : </label>
+                    <input type="text" name="director" value="{{movie.director}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Produced By :</label>
+                    <input type="text" name="producedby" value="{{movie.producedby}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Genre : </label>
+                    <input type="text" name="genre" value="{{movie.genre}}"  > 
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Duration : </label>
+                    <input type="text" name="duration" value="{{movie.duration}}" > 
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        Story : </label>
+                    <input type="text" name="story" value="{{movie.story}}" >
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        Read More Story : </label>
+                    <input type="text" name="readmorestory" value="{{movie.readmorestory}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Story English: </label>
+                    <input type="text" name="storyenglish" value="{{movie.storyenglish}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        Youtube trailer Link : </label>
+                    <input type="text" name="yttrailorlink" value="{{movie.yttrailorlink}}" >
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 1 : </label>
+                    <input type="text" name="actid1" value="{{movie.actid1}}" >
+                     Name<input type="text" name="actorname1" value="{{movie.actorname1}}" >
+                     MV Name<input type="text" name="mvactorname1" value="{{movie.mvactorname1}}">
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 2 : </label>
+                    <input type="text" name="actid2" value="{{movie.actid2}}">
+                     Name<input type="text" name="actorname2" value="{{movie.actorname2}}">
+                     MV Name<input type="text" name="mvactorname2"value="{{movie.mvactorname2}}" >
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 3 : </label>
+                    <input type="text" name="actid3" value="{{movie.actid3}}">
+                     Name<input type="text" name="actorname3" value="{{movie.actorname3}}">
+                     MV Name<input type="text" name="mvactorname3" value="{{movie.mvactorname3}}">
+                </div>
+                <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 4: </label>
+                    <input type="text" name="actid4" value="{{movie.actid4}}">
+                     Name<input type="text" name="actorname4" value="{{movie.actorname4}}">
+                     MV Name<input type="text" name="mvactorname4" value="{{movie.mvactorname4}}">
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 5: </label>
+                    <input type="text" name="actid5" value="{{movie.actid5}}">
+                     Name<input type="text" name="actorname5" value="{{movie.actorname5}}">
+                     MV Name<input type="text" name="mvactorname5" value="{{movie.mvactorname5}}">
+                </div>
+                 <div class="input-section">
+                    <label class="fm-details">
+                        ActroID 6: </label>
+                    <input type="text" name="actid6" value="{{movie.actid6}}">
+                     Name<input type="text" name="actorname6" value="{{movie.actorname6}}">
+                     MV Name<input type="text" name="mvactorname6" value="{{movie.mvactorname6}}" >
+                </div>
+                  <div class="input-section">
+                    <label class="fm-details">
+                        Youtube Links: </label>
+                    <input type="text" name="ytlink"  value="{{movie.ytlink}}">
+                    <input type="text" name="ytlink1"  value="{{movie.ytlink1}}">
+                    <input type="text" name="ytlink2" value="{{movie.ytlink2}}">
+                    <input type="text" name="ytlink3" value="{{movie.ytlink3}} ">
+                    
+                </div>
+                <img src="/images/movie-posters/{{movie._id}}.jpg" style="width: 100px;" id="viewposter">
+                <div class="input-section">
+                     <label class="fm-details">
+                        Movie Poster : </label>
+                    <input type="file" name="image" onchange="posterView(event)" >
+                </div>
+                 <img src="/images/movie-posters/{{movie._id}}a.jpg" style="width: 100px;" id="viewposter">
+                <div class="input-section">
+                     <label class="fm-details">
+                        Back Cover Poster : </label>
+                    <input type="file" name="image1" onchange="posterView(event)" >
+                </div>
+
+                <button type="submit">Edit Movie</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function posterView(event){
+        document.getElementById(viewposter).src=URL.createObjectURL(event.target.files[0])
+    }
+</script>

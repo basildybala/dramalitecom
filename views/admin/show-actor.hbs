@@ -1,0 +1,56 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+<title>Show All Actors</title> 
+  <div class="nav-bar-sticky ">
+        
+        <ul>
+          <span>Header</span>
+          <div class="nav-swiper">
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin">Admin Home</a></li>
+          <li><a href="/admin/show-admin-movies">Show All Movies Admin</a></li>
+          <li><a href="/admin/add-movies">Add Movies</a></li>
+          <li><a href="/admin/show-actor">Show All Actors</a></li>
+          <li><a href="/admin/add-actor">Add Actor</a></li>
+          <li><a href="/admin/add-nextweek-movies">Add Next Week</a></li>
+          <li><a href="/admin/add-nextweek-movies">Show Next Week Movies</a></li>
+         
+        </div>
+        </ul>
+  </div>
+
+<table id="sample-table" style="width:100%;text-align:left">
+  <thead>
+  <tr >
+    <th class="admin-header">Actor Name</th>
+    <th class="admin-header"> Language</th>
+    <th class="admin-header"> ID</th>
+    <th class="admin-header"> Options</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each actor}}
+  <tr>
+    <td class="td-class">{{this.actorname}}</td>
+    <td class="td-class">{{this.language}}</td>
+     <td class="td-class"><input style="width: 90%;" type="text" value="{{this._id}}"> </td>
+    <td class="td-class">
+      
+        <a style="color: green;" href="/admin/edit-actor/{{this._id}}"><i class="fas fa-user-edit"></i>Edit</a>
+        <a href="/admin/delete-actor/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.name}}')"><i class="fas fa-trash"></i>Delete</a>
+        
+        </td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+
+
+<script>
+
+  $(function(){
+    $('#sample-table').DataTable();
+  });
+</script>

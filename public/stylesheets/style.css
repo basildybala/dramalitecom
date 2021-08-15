@@ -1,0 +1,1209 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=PT+Sans+Narrow&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Noto+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf1ffb5;
+}
+
+/*-----------------------Header Mwnu------------------*/
+.website-header{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-family: 'Varela Round';
+    font-size: 27px;
+    background-color: rgb(76 71 71);
+    border: 3px solid #443c3c;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+.website-header span{
+    color: #fc3613;
+}
+.website-english-header{
+    color: #f9f9f9;
+    font-weight: bold;
+    font-family: 'Varela Round';
+    font-size: 27px;
+}
+.website-malayalam-header{
+    color: #f9f9f9;
+    font-weight: 500;
+    font-family: 'manjari';
+    font-size: 18px;
+}
+/*--------------------Search Box------------------*/
+.search-bar{
+    margin: 13px 0;
+}
+.search-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button{
+    height: 32px;
+    border: 1px solid black;
+    width: 75px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    background: #4c4747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.search-button a{
+  text-decoration: none;
+  color: white;
+}
+.search-bar input{
+    width: 230px;
+    height:32px;
+    font-size: 13px;
+    padding: 0px 10px;
+    border-radius: 25px 0 0 25px;
+    background: #e0dede;
+    border: none;
+  }
+
+/*upcoming section*/
+.black-header{
+    background-color: rgb(76 71 71);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 12px;
+}
+.black-header i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.black-header h1{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.black-header h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.white-link{
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid black ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dflexx{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;    
+}
+.dflexx i{
+    color: rgb(252, 54, 19);
+    font-size: larger;
+    margin-right: 4px;
+}
+/*Pages*/
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pages a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 2px;
+    color: rgb(252, 54, 19);
+    font-weight: bold;
+}
+
+/*Movie section*/
+.main{
+    overflow: hidden;
+    width: 96%;
+    margin-left: 2%;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.14);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+
+}
+.movies-images{
+    padding: 10px 10px;
+    position: relative;
+}
+.backimg{
+    height: 235px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+   
+}
+.movie-img img{
+    background-size: cover;
+    object-fit: cover;
+}
+.movie-cover{
+    position: absolute;
+    height: 160px;
+    max-width: 135px;
+    bottom: -58px;
+    left: 23px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.1);
+}
+.fa-play{
+    margin-top: 5px;
+}
+.fa-playy{
+    position: absolute;
+    right: 28px;
+    bottom: -7px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: rgb(252, 54, 19);
+    color: white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-playy i{
+    margin-top: 10px;
+    margin-right: -3px;
+}
+.fa-trailor{
+    position: absolute;
+    width: 84px;
+    height: 21px;
+    background-color: rgb(252, 54, 19);
+    right: 61px;
+    bottom: 2px;
+    color: white;
+    /* text-align: center; */
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.fa-trailor p{
+   font-size: 10px; 
+}
+.movies-malayalam-header{
+    margin-left: 165px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+.movies-malayalam-header i{
+    color: rgb(252, 54, 19);
+    font-size: 18px;
+}
+.movies-malayalam-header h6{
+    margin: 0 2px;
+    color: rgb(0 0 0 / 70%);
+    font-family: 'manjari';
+}
+/*Video Secton*/
+
+.video-row{
+    margin-right: 10PX;
+}
+.video-row iframe{
+    width: 300PX;
+   
+}
+
+
+
+.swiper-container {
+    width: 93%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+}
+.mv-details{
+    display: flex;
+    align-items: center;
+}
+.actor-section{
+    /* border-bottom: 1px solid rgb(219, 199, 199); */
+    border-bottom: 1px solid black;
+    margin: 5px 0px;
+    
+}
+.mv-details h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    font-family: sans-serif;
+}
+.mv-details h5{
+    font-size: 13px;
+    color: rgb(252, 54, 19);
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px;
+}
+
+.basic-head{
+    font-size: 0.9em;
+    margin-top: 7px;
+    width: 82px;
+    height: 27px;
+    background-color: rgb(76 71 71);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 1%;
+}
+.basic-head h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Varela Round', sans-serif;
+}
+.movie-story{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: auto;
+}
+.story-p{
+    width: 100%;
+}
+.story-p p{
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-family: 'manjari';
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.image-section{
+    border-bottom: rgb(209, 207, 207) solid;
+    margin: 5px 0px; 
+}
+.movie-images img{
+    
+        
+      max-width: 100%; 
+        height: auto;
+        
+    
+}
+/*Actor section*/
+.actor-image{
+    width: 50%;
+}
+.actor-image img{
+    width: 100%;
+    border-radius: 5%;
+    margin: 5px;
+}
+.actor-two{
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(209, 207, 207) solid;
+}
+.black-headerr{
+    background-color: rgb(24, 20, 20);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 3px;
+}
+.video-yt h4{
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 0;
+}
+.video-yt{
+    background-color: white;
+    height: 150px;
+    border-bottom: rgb(209, 207, 207) solid;
+}
+.connect-with img{
+    width: 20px;
+    border-radius: 15%;
+    margin-right: 5px;
+}
+.connect-with h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    font-family: sans-serif;
+}
+.connect-with{
+    display: flex;
+    align-items: center;
+}
+.add-movies-form-section{
+    margin-top: 10px;
+}
+.movies-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 10px;
+}
+.fm-details{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.input-section{
+    margin: 5px;
+}
+.input-section input{
+    height: 23px;
+    width: 250px;
+    border: 2px solid #a19e9e;
+}
+.movies-form button{
+    background-color: #000;
+    color: white;
+    width: 113px;
+    height: 32px;
+    border-radius: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+  /*ADMIN MOVIES LIST*/
+  .admin-header{
+    background-color: black;
+    color: white;
+    height: 28px;
+    font-weight: 700;
+  }
+  .td-class{
+    border-bottom: 1px solid black;
+    color: #070807;
+    font-size: 13px;
+    font-family: 'Varela Round';
+    font-weight: 700;
+  }
+  .td-class a{
+      text-decoration: none;
+      margin-right: 10px;
+    
+      color: red;
+      font-weight: bold;
+  }
+
+  /*YOUTUBE TRAILOR */
+  .video-container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    /* height: 400px; */
+    z-index: 9999;
+   
+    /* display: flex; */
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3 ;
+
+}
+
+.video-container .close{
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    font-size: 23px;
+    cursor: pointer;
+    color: red;
+    z-index: 9999;
+    font-weight: 900;
+
+}
+.video-container iframe{
+    width: 90%;
+    max-width: 800px;
+    height: 320px;
+    transform: scale(0);
+    outline: none;
+    transition: all 0.3s;
+}
+.video-container.show{
+    pointer-events: all;
+    opacity: 1;
+
+}
+.video-container.show iframe{
+    transform: scale(1);
+}
+/*Movies LIST*/
+.movies-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.movies-section a{
+    text-decoration: none;
+}
+.movies-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+    margin: 8px 6px;
+    height: 185px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background: white;
+    
+}
+.movies-img{
+    width: 110px;
+}
+.movies-img img{
+    width: 100%;
+    height: 139px;
+    object-fit: cover;
+}
+.movies-body{
+    text-align: center;
+}
+.movies-body h3{
+    margin: 1px 0px;
+    color: black;
+    font-family: 'manjari';
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+.movies-body h5{
+    margin: 0px;
+    color: black;
+    font-family: 'Varela Round';
+    font-weight: 400;
+    font-size: 7px;
+}
+.movies-body h4{
+    margin: 1px 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Varela Round';
+}
+.movies-body h6{
+    margin: 1px 0;
+    font-size: 9px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: black;
+}
+.movies-body p{
+    margin: 1px 0;
+    font-size: 11px;
+    font-family: 'Varela Round';
+}
+/*Latest Update Movies*/
+.movies-list-latestupdate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    margin: 2px 2px;
+    height: 148px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background: white;
+}
+.movies-img-latestupdate{
+    width: 90px;
+}
+.movies-img-latestupdate img{
+    width: 100%;
+    height:105px ;
+    object-fit: cover;
+}
+
+.movies-body-latestupdate{
+    text-align: center;
+}
+.movies-body-latestupdate p{
+    margin: 0px;
+    color: black;
+    font-family: 'Manjari', sans-serif;
+    font-weight: 600;
+    font-size: 12px;   
+}
+.movies-body-latestupdate h5{
+    margin: 0px;
+    color: black;
+    font-family: 'Varela Round';
+    font-weight: 400;
+    font-size: 8px;   
+}
+.movies-body-latestupdate h6{
+    margin: 1px 0;
+    font-size: 9px;
+    font-family: 'Varela Round';
+    color: black;
+    font-weight: 400;
+}
+/*ACTOR SWAP*/
+.swiper{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: 1%;
+}
+.swiper::-webkit-scrollbar{
+    display: none;
+}
+.actorswp{
+    border: 1px solid rgba(0,0,0,.14);
+    width: 95px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 5px;
+    
+}
+.actorswp img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.actorswp a{
+    text-decoration: none;
+}
+.actorswp h6{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Varela Round';
+    color: #211818;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.actorswp p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0 0 0 / 73%);
+    font-family: sans-serif;
+}
+.actor-swp{
+    display: flex;
+    margin-left: 5px;
+}
+/*Story Readmore*/
+
+.story-readmore{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: auto;
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid red;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5 ;
+  
+  }
+  .story-readmore p{
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .story-readmore .closee{
+    position: absolute;
+    top: 0;
+      right: 0;
+      font-size: 35px;
+    cursor: pointer;
+    color: red;
+    z-index: 99999;
+    font-weight: 900;
+  
+  }
+    
+  .story-readmore.show{
+    pointer-events: all;
+    opacity: 1;
+  
+  }
+  .story-readmore.show {
+    transform: scale(1);
+  }
+  
+  .readmore-btn{
+    color: blue;
+    text-align: center;
+    display: inline-block;
+    padding: 3px 9px;
+    border: 1px solid rgb(41, 33, 32);
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 11px;
+    margin-left: 8px;
+  }
+  /*Movis Categories Swiper */
+  .nav-bar-sticky{
+    position: relative;
+    margin-top: 10px;
+   
+  }
+  .nav-bar-sticky ul{
+   display: flex;
+   list-style: none;
+   margin-left: -35px;
+  }
+ 
+  .nav-bar-sticky ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .nav-swiper{
+   display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden;
+  }
+  .nav-bar-sticky span{
+   background-color: rgb(180 169 169 / 70%);
+   margin-right: 3px;
+   padding: 2px 6px;
+   font-family: sans-serif;
+   font-size: 13px;
+   font-weight: 700;
+  }
+  .nav-swiper li{
+   background-color: rgb(180 169 169 / 70%);
+   margin-right: 5px;
+   padding: 3px 8px;
+   font-family: sans-serif;
+   font-size: 13px;
+   font-weight: 500;
+   border-radius: 5px;
+  }
+  
+  
+  .nav-swiper::-webkit-scrollbar{
+    display: none;
+  }
+  /*ACTOR FILM*/
+  .movies-english-header{
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76 71 71);
+    border: 3px solid #443c3c;
+  }
+  .movies-english-header h1{
+    color: #f9f9f9;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  .actor-film{
+      display: flex;
+      width: 100%;
+      height: auto;
+
+  }
+  .actor-film-card{
+    width: 90px;
+    margin: 2px 2px;
+    height: 142px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background: white;
+  }
+  .actor-film-card h5{
+    margin: 2px;
+    font-size: 11px;
+    font-family: 'Varela Round';
+  }
+  .actor-film-card img{
+    width: 100%;
+    height: 95px;
+    object-fit: cover;   
+  }
+  .actor-film-card h6{
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 11px;
+    font-family: sans-serif;
+  }
+  .actor-film-card a{
+      text-decoration: none;
+  }
+  /*Next Week MOVIES SECTION*/
+  .latest-movies-section{
+    display: flex;
+    
+  }
+  .latest-movies-section a{
+    text-decoration: none;
+  }
+  .latest-update-movies{
+    width: 110px;
+    height: 175px;
+    background-color: rgb(252, 54, 19);
+    overflow: hidden;
+    margin: 6px;
+    border: 1px solid black;
+  }
+  .latest-update-movies img{
+    width: 100%;
+    height: 146px;
+    object-fit: cover;
+  }
+  .latest-update-movies h4{
+    margin: 1px 0px;
+    padding: 0;
+    font-size: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  .latest-update-movies p{
+    margin: 0;
+    font-size: 8px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  /*End Section nd Share*/
+  .end-container{
+    background-color: rgb(54 46 46);
+    width: 100%;
+    padding: 5px;
+   }
+   .connect-social{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .connect-icons i{
+    font-size: 19px;
+    color: rgb(252, 54, 19);
+    margin-right: 8px;
+   }
+   .connect-text p{
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-right: 3px;
+   }
+   .end-copyright{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    font-family: 'Varela Round';
+    margin-top: 2px;
+   }
+
+   .share-link h5{
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 4px 1px;
+}
+.share-link{
+    display: flex;
+}
+.share-telegram{
+    font-size: 20px;
+    margin: 1px 7px;
+    color: #0088cc;
+}
+.share-whatsapp{
+    font-size: 20px;
+    margin: 1px 0px;
+    color: #27ba2d;  
+}
+.share-link h6{
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 4px 1px;
+}
+ 
+   /*Story ENGLISH*/
+
+.story-readmore-english{
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: auto;
+      background-color: #eee;
+      padding: 15px;
+      border: 1px solid red;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5 ;
+  
+  }
+ .story-readmore-english p{
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+.closee-english{
+    position: absolute;
+    top: 0;
+      right: 0;
+      font-size: 35px;
+    cursor: pointer;
+    color: red;
+    z-index: 999919;
+    font-weight: 900;
+   }
+    
+  .story-readmore-english.show{
+    pointer-events: all;
+    opacity: 1;
+  }
+  .story-readmore-english.show {
+    transform: scale(1);
+  }
+  
+  .readmore-btn-english{
+    color: blue;
+    text-align: center;
+    display: inline-block;
+    padding: 3px 9px;
+    border: 1px solid rgb(41, 33, 32);
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 11px;
+    margin-left: 8px;
+  }
+
+  /*Details Section Added*/
+  .details{
+    margin-left: 1%;
+}
+.details-col{
+    display: flex;
+}
+.details-col h5{
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 1px;
+}
+.details-col p{
+    margin: 1px 7px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+/*Join Family*/
+.share-link h5{
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 4px 1px;
+}
+.share-link{
+    display: flex;
+}
+.share-telegram{
+    font-size: 20px;
+    margin: 1px 7px;
+    color: #0088cc;
+}
+.share-whatsapp{
+    font-size: 20px;
+    margin: 1px 0px;
+    color: #27ba2d;  
+}
+.connect-with-text{
+    font-family: 'Varela Round';
+    font-size: 14px;
+    margin: 4px 5px;
+   
+}
+.connect-with{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect-instagram{
+    font-size: 20px;
+    color: #cd486b;
+    margin-left: 4px;
+}
+.connect-telegram{
+    font-size: 20px;
+    color: #0088cc;
+    margin-left: 4px;
+}
+.connect-facebook{
+    font-size: 20px;
+    color: #4267B2;
+    margin-left: 4px;
+}
+
+/*Terms Conditions & Privacy Policy*/
+.terms-condition-sub-header{
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 15px 3px;
+}
+.terms-condition p{
+    margin: 11px 7px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+.terms-condition ul li{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+.privacy-policy-sub-header{
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 15px 3px;
+}
+.privacy-policy p{
+    margin: 11px 7px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+.privacy-policy ul li{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+}
+.footer-privacy{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 7px;
+}
+.footer-privacy a{
+    color: white;
+    font-family: 'Varela Round';
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact-email-link a{
+    font-size: 17px;
+    text-decoration: none;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.contact-email-link{
+    margin: 10px;
+}
+
+@media(min-width: 767px){
+    body{
+        margin: 0 15%;
+    }
+    .site-logo img{
+        width: 61%;
+        height: 133px;
+        object-fit: contain;
+    }
+    .movie-poster img{
+        width: 35%;
+        max-height: min-content;
+        height: 600px;
+        
+    }
+    .info-head{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .actor-image{
+        width: 20%;
+    }
+    .actor-image img{
+        width: 100%;
+        border-radius: 5%;
+        margin: 5px;
+    }
+    .connect-with img{
+        width: 30px;
+        border-radius: 15%;
+        margin-right: 5px;
+    }
+    
+    .movies-img{
+        width: 100%;
+    }
+    .movies-img img{
+        width: 100%;
+        height: 190px ;
+        object-fit: cover;
+    }
+    .movies-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        height: 230px;
+        margin: 10px 9px;
+        
+    }
+    /*Next Week MOVIES SECTION*/
+  .latest-movies-section{
+    display: flex;
+    
+  }
+  .latest-movies-section a{
+    text-decoration: none;
+  }
+  .latest-update-movies{
+    width: 140px;
+    height: 190px;
+    background-color: rgb(252, 54, 19);
+    overflow: hidden;
+    margin: 7px;
+    border: 1px solid black;
+
+  }
+  .latest-update-movies img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .latest-update-movies h4{
+    margin: 1px 0px;
+    padding: 0;
+    font-size: 12px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+
+  }
+  .latest-update-movies p{
+    margin: 0;
+    font-size: 9px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+/*Movies Image Area*/
+  .mv-head{
+    margin-left: 215px;
+    margin-bottom: 50px;
+    font-size: 2rem; }
+  .mv-head i{
+        font-size: 25px;
+    }
+  .backimg{
+    height: 460px;  
+}
+.movie-cover{
+    height: 250px;
+    max-width: 175px;
+    bottom: -75px;
+}
+.movies-malayalam-header{
+    margin-left: 230px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.movies-list-latestupdate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 107px;
+    margin: 3px 3px;
+    height: 171px;
+    
+}
+.movies-img-latestupdate{
+    width: 107px;
+}
+.movies-img-latestupdate img{
+    width: 100%;
+    height:130px ;
+    object-fit: cover;
+}
+.movies-body-latestupdate p{
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'Varela Round';
+    font-weight: 600;
+    font-size: 10px;   
+}
+
+}
